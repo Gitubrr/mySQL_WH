@@ -4,7 +4,7 @@ CREATE TABLE Person
         Last_Name  VARCHAR(20) NOT NULL,
         First_Name VARCHAR(20) NOT NULL,
         Phone      VARCHAR(15) NOT NULL,
-        Address    VARCHAR(50) NOT NULL,
+        Address    VARCHAR(50)         ,
         CONSTRAINT Person_PK PRIMARY KEY (Person_ID)
     )
 ;
