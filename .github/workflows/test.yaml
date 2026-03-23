@@ -37,3 +37,8 @@ jobs:
         run: |
           mysql -h 127.0.0.1 -u root -proot pet_db < sql/pets.sql
           echo "db created successfully"
+
+      - name: Test vaccine creation
+        run: |
+          mysql -h 127.0.0.1 -u root -proot pet_db < sql/vaccine.sql
+          echo "db created successfully"
