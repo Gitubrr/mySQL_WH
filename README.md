@@ -15,6 +15,8 @@ Database for a pet salon
 - **Service** — services
 - **Employee_Service** — employee skills
 - **Order1** — orders for services
+- **Vaccine_Type** — directory of vaccine types
+- **Vaccine** — vaccination log
 
 ## ERD diagram
 
