@@ -2,7 +2,6 @@
 [![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?logo=mysql&logoColor=white)](https://www.mysql.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Build](https://img.shields.io/github/actions/workflow/status/Gitubrr/GoSymGym/build_and_lint.yaml?label=build&job=build)](https://github.com/Gitubrr/mySQL_WH/actions/workflows/test.yaml)
-[![Lint](https://img.shields.io/github/actions/workflow/status/Gitubrr/GoSymGym/build_and_lint.yaml?label=lint&job=lint)](https://github.com/Gitubrr/mySQL_WH/actions/workflows/lint.yamls)
 
 Database for a pet salon
 
