@@ -1,0 +1,23 @@
+name: SQL Lint & Validate
+
+on:
+  push:
+    branches: [ main, master ]
+    paths:
+      - '**.sql'
+  pull_request:
+    paths:
+      - '**.sql'
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      # - name: Install SQLFluff
+      #   run: pip install sqlfluff
+      
+      # - name: Lint SQL files
+      #   run: sqlfluff lint sql/

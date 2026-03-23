@@ -1,1 +1,33 @@
-# My Project
+# Pet Salon Database
+[![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?logo=mysql&logoColor=white)](https://www.mysql.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![Go linting and formatting](https://img.shields.io/github/actions/workflow/status/Gitubrr/GoSymGym/build_and_lint.yaml?label=lint&job=lint)
+[![MySQL Tests](https://img.shields.io/github/actions/workflow/status/Gitubrr/pet-clinic-db/test-mysql.yml?label=MySQL%20Tests&logo=mysql&logoColor=white)](https://github.com/Gitubrr/MySQL_HW/actions)
+
+Database for a pet salon
+
+## Database structure
+
+- **Person** — people (owners and employees)
+- **Owner** — pet owners
+- **Employee** — employees
+- **Pet_Type** — types of animals (dog, cat, etc.)
+- **Pet** — pets
+- **Service** — services
+- **Employee_Service** — employee skills
+- **Order1** — orders for services
+
+## ERD diagram
+
+![ERD](docs/erd.png)
+
+## Installation
+
+Create a database
+```bash
+mysql -u root -p -e "CREATE DATABASE pet_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
+```
+Import structure and data
+```bash
+mysql -u root -p pet_db < sql/pets.sql
+```
