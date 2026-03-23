@@ -18,7 +18,7 @@ Database for a pet salon
 
 ## ERD diagram
 
-![ERD](docs/erd.png)
+![ERD](docs/erd2.png)
 
 ## Installation
 
@@ -29,4 +29,5 @@ mysql -u root -p -e "CREATE DATABASE pet_db CHARACTER SET utf8mb4 COLLATE utf8mb
 Import structure and data
 ```bash
 mysql -u root -p pet_db < sql/pets.sql
+mysql -u root -p pet_db < sql/vaccine.sql
 ```
