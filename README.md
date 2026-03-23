@@ -1,8 +1,8 @@
 # Pet Salon Database
 [![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?logo=mysql&logoColor=white)](https://www.mysql.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-![Go linting and formatting](https://img.shields.io/github/actions/workflow/status/Gitubrr/GoSymGym/build_and_lint.yaml?label=lint&job=lint)
-[![MySQL Tests](https://img.shields.io/github/actions/workflow/status/Gitubrr/pet-clinic-db/test-mysql.yml?label=MySQL%20Tests&logo=mysql&logoColor=white)](https://github.com/Gitubrr/MySQL_HW/actions)
+[![Build](https://img.shields.io/github/actions/workflow/status/Gitubrr/GoSymGym/build_and_lint.yaml?label=build&job=build)](https://github.com/Gitubrr/mySQL_WH/actions/workflows/test.yaml)
+[![Lint](https://img.shields.io/github/actions/workflow/status/Gitubrr/GoSymGym/build_and_lint.yaml?label=lint&job=lint)](https://github.com/Gitubrr/mySQL_WH/actions/workflows/lint.yamls)
 
 Database for a pet salon
 
@@ -11,7 +11,7 @@ Database for a pet salon
 - **Person** — people (owners and employees)
 - **Owner** — pet owners
 - **Employee** — employees
-- **Pet_Type** — types of animals (dog, cat, etc.)
+- **Pet_Type** — types of animals (dog, cat, etc.)s
 - **Pet** — pets
 - **Service** — services
 - **Employee_Service** — employee skills
