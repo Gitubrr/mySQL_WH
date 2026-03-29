@@ -26,5 +26,5 @@ Database for a pet salon
 
 Create a database and import data
 ```bash
-mysql -u root -p < init.sql
+mysql -u root -p < src/init.sql
 ```

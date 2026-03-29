@@ -35,5 +35,5 @@ jobs:
       
       - name: Test data creation
         run: |
-          mysql -h 127.0.0.1 -u root -p < init.sql
+          mysql -h 127.0.0.1 -u root -p < src/init.sql
           echo "db created successfully"
