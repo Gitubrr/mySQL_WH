@@ -2,12 +2,11 @@ name: Test MySQL Database
 
 on:
   push:
-    branches: [ main, master ]
-    paths:
-      - 'sql/*.sql'
+    branches: 
+      - '**'
   pull_request:
-    paths:
-      - 'sql/*.sql'
+    branches:
+      - '**'
 
 jobs:
   test:
@@ -34,6 +33,9 @@ jobs:
         run: sleep 10
       
       - name: Test data creation
+        shell: bash
+        env:
+          MYSQL_PWD: root 
         run: |
-          mysql -h 127.0.0.1 -u root -p < init.sql
+          mysql -h 127.0.0.1 -u root < src/init.sql
           echo "db created successfully"
