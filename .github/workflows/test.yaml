@@ -33,12 +33,7 @@ jobs:
       - name: Wait for MySQL
         run: sleep 10
       
-      - name: Test schema creation
+      - name: Test data creation
         run: |
-          mysql -h 127.0.0.1 -u root -proot pet_db < sql/pets.sql
-          echo "db created successfully"
-
-      - name: Test vaccine creation
-        run: |
-          mysql -h 127.0.0.1 -u root -proot pet_db < sql/vaccine.sql
+          mysql -h 127.0.0.1 -u root -p < init.sql
           echo "db created successfully"
