@@ -33,6 +33,9 @@ jobs:
         run: sleep 10
       
       - name: Test data creation
+        shell: bash
+        env:
+          MYSQL_PWD: root 
         run: |
           mysql -h 127.0.0.1 -u root < src/init.sql
           echo "db created successfully"
