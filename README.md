@@ -24,12 +24,7 @@ Database for a pet salon
 
 ## Installation
 
-Create a database
+Create a database and import data
 ```bash
-mysql -u root -p -e "CREATE DATABASE pet_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
-```
-Import structure and data
-```bash
-mysql -u root -p pet_db < sql/pets.sql
-mysql -u root -p pet_db < sql/vaccine.sql
+mysql -u root -p < init.sql
 ```
