@@ -1,4 +1,4 @@
-name: Test MySQL Database
+name: Build MySQL Database
 
 on:
   push:
@@ -32,7 +32,7 @@ jobs:
       - name: Wait for MySQL
         run: sleep 10
       
-      - name: Test data creation
+      - name: Build data creation
         shell: bash
         env:
           MYSQL_PWD: root 
